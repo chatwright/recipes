@@ -43,6 +43,29 @@ squattable, `id` is not. The `id` in your registry row must exactly match
 the `id` declared in your `CHATWRIGHT.md` front matter. A registry PR whose
 `id` doesn't match the fetched manifest's `id` fails validation.
 
+## specFirst
+
+`specFirst` is an **optional boolean** row field:
+
+```jsonc
+{
+  "id": "acme-rsvp-bot",
+  "repo": "https://github.com/acme-dev/rsvp-bot",
+  "category": "implementation",
+  "capabilities": ["messaging.buttons.inline", "messaging.message.edit"],
+  "addedAt": "2026-07-23",
+  "specFirst": true
+}
+```
+
+Set it to `true` if your repository carries SpecScore specs — a
+`specscore.yaml` plus at least one main Idea or Feature under `spec/` (see
+[chatwright/bot-template](https://github.com/chatwright/bot-template) for a
+worked starting point). It renders as a quality chip next to your entry in
+the registry listing — **it is never a registration requirement.** Omit the
+field entirely if it doesn't apply; leaving it unset is equivalent to
+`false` and carries no penalty.
+
 ## What validation runs
 
 On every pull request touching `registry.json`, automation:

@@ -85,7 +85,9 @@ bar and conventions:
    Implementation to an existing Recipe. Copy the shape of
    [`recipes/collect-rsvp/`](recipes/collect-rsvp/README.md) — the worked
    exemplar every Recipe here follows.
-2. **Register your bot repository.** Add a
+2. **Register your bot repository.** Start from
+   [github.com/chatwright/bot-template](https://github.com/chatwright/bot-template)
+   if you're building a new bot from scratch, or add a
    [`CHATWRIGHT.md`](https://github.com/chatwright/chatwright/blob/main/formats/chatwright-md/v1/README.md)
    manifest to your own repository — any language, any platform — then open
    a one-row pull request against [`registry/registry.json`](registry/registry.json).

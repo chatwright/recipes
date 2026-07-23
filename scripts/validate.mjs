@@ -142,6 +142,11 @@ function validateRegistry() {
     if (entry.capabilities !== undefined && !Array.isArray(entry.capabilities)) {
       fail(`registry/registry.json: entries[${i}].capabilities must be an array`);
     }
+    // specFirst is optional — an unset field is fine; if present it must be
+    // a boolean. See registry/README.md's "specFirst quality chip" section.
+    if (entry.specFirst !== undefined && typeof entry.specFirst !== 'boolean') {
+      fail(`registry/registry.json: entries[${i}].specFirst must be a boolean`);
+    }
   });
 
   console.log(`registry.json: ${json.entries.length} entrie(s) checked`);

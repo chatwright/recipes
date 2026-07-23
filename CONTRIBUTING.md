@@ -57,6 +57,13 @@ Implementations carry exactly one tier, per
   `capabilities` (capability keys).
 - Capabilities (`capabilities/<key>.md`): `key`, matching the filename and
   the corresponding `data/capabilities/<key>.json`.
+- Code snippets (`recipes/<id>/snippets/<framework>.md`): `framework`
+  (kebab-case slug), `label` (tab caption), `language` (fence language),
+  `kind` (`predefined` today; generated kinds arrive with research item
+  I-77), optional `source` URL. One framework per file — the site renders
+  a recipe's snippets as a tabbed Code card. Snippets must be idiomatic
+  for their framework (verified against its real API, not guessed) and
+  should show how to point the bot at Chatwright's emulated platform API.
 - `id` values are kebab-case and unique across `jobs/` and `recipes/` —
   `node scripts/validate.mjs` checks this, and every `solvedBy`/`jobs`
   cross-reference, before you open a pull request.

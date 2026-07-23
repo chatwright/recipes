@@ -45,6 +45,18 @@ no-framework, no-build iframe bot speaking the
 Its protocol exchange was proven live in a real browser on 2026-07-23; the
 in-page Playground demo lands with the browser runtime.
 
+## Code
+
+Per-framework snippets, one file each under [`snippets/`](snippets/) — the
+site renders these as a tabbed Code card. Predefined today; deterministic
+or AI-assisted generation later (research item I-77).
+
+| Framework | Snippet |
+|---|---|
+| Vanilla JS (what the live greetbot runs) | [`snippets/vanilla-js.md`](snippets/vanilla-js.md) |
+| bots-fw (Go) | [`snippets/bots-fw-go.md`](snippets/bots-fw-go.md) |
+| python-telegram-bot | [`snippets/python-telegram-bot.md`](snippets/python-telegram-bot.md) |
+
 ## Testing
 
 The Go runtime's greetbot example runs this exact flow as a deterministic

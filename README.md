@@ -120,3 +120,9 @@ Dual-licensed, MDN-style:
 ---
 
 An independent open-source project developed by [Sneat.co](https://sneat.co).
+
+## Spec-first
+
+Chatwright is developed spec-first with [SpecScore](https://specscore.md/) —
+product specs live in the [standard repository](https://github.com/chatwright/chatwright);
+this repository's own specs live under [`spec/`](spec/README.md).

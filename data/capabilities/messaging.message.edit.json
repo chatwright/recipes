@@ -17,8 +17,8 @@
       "supported": true
     },
     "chatwright-ts": {
-      "supported": false,
-      "notes": "browser runtime scaffolded, not implemented"
+      "supported": true,
+      "notes": "Telegram only (TelegramCodec: editMessageText appends a new, versioned journal entry) — landed 2026-07-23. WhatsApp has no message-edit endpoint on the real platform, so neither runtime's WhatsApp codec implements this — an N/A-by-design gap, not a debt."
     }
   }
 }

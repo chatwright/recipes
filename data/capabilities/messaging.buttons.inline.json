@@ -17,8 +17,8 @@
       "supported": true
     },
     "chatwright-ts": {
-      "supported": false,
-      "notes": "browser runtime scaffolded, not implemented"
+      "supported": true,
+      "notes": "Telegram only (TelegramCodec: inline_keyboard parsed into journal actions, callback_query round-trip) — landed 2026-07-23. The WhatsApp codec (also landed 2026-07-23) is deliberately text-only and does not implement this capability; see docs/runtime-parity.md."
     }
   }
 }

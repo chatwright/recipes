@@ -1,0 +1,24 @@
+{
+  "key": "messaging.text",
+  "status": "stable",
+  "specUrl": "https://core.telegram.org/bots/api#sendmessage",
+  "support": {
+    "telegram": {
+      "since": "Bot API 1.0",
+      "notes": "Plain text messages are the Bot API's original, foundational primitive — present since the platform's first public release."
+    },
+    "whatsapp": {
+      "since": "Cloud API 1.0",
+      "notes": "Plain text (type: \"text\") is the WhatsApp Cloud API's baseline send primitive, present since the Cloud API's public launch."
+    }
+  },
+  "emulators": {
+    "chatwright-go": {
+      "supported": true
+    },
+    "chatwright-ts": {
+      "supported": true,
+      "notes": "text slices in both runtimes — TelegramCodec's sendMessage and WhatsAppCodec's sendMessage/type:\"text\", both landed 2026-07-23."
+    }
+  }
+}

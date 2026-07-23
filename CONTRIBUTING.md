@@ -51,7 +51,8 @@ Implementations carry exactly one tier, per
 - Jobs (`jobs/<id>.md`): `id`, `title`, `solvedBy` (recipe ids), `related`
   (job ids).
 - Recipes (`recipes/<id>/README.md`): `id`, `title`, `jobs` (job ids),
-  `status` (`draft`, ...).
+  `status` (`draft`, ...), `tags` (kebab-case discovery tags — e.g. `start`,
+  `game`, `checkout`; they become search facets on chatwright.dev).
 - Implementations (`recipes/<id>/implementations/<slug>.md`): `title`,
   `recipe`, `tier` (`official` | `alternative` | `community`), `platform`,
   `capabilities` (capability keys).

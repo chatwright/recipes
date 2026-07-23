@@ -3,6 +3,7 @@ id: collect-rsvp
 title: Collect RSVP for an event
 jobs: [collect-rsvp-for-event]
 status: draft
+tags: [rsvp, events, buttons]
 ---
 
 # Collect RSVP for an event

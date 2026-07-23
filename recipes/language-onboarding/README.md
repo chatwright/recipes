@@ -3,6 +3,7 @@ id: language-onboarding
 title: Language onboarding
 jobs: [onboard-users-in-their-language]
 status: draft
+tags: [start, onboarding, i18n]
 ---
 
 # Language onboarding

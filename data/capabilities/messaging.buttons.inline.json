@@ -1,0 +1,24 @@
+{
+  "key": "messaging.buttons.inline",
+  "status": "stable",
+  "specUrl": "https://core.telegram.org/bots/api#inlinekeyboardmarkup",
+  "support": {
+    "telegram": {
+      "since": "Bot API 2.0",
+      "notes": "Inline keyboards attached to sent messages, introduced alongside callback queries and the message-edit methods. Verify the exact Bot API version against Telegram's official changelog before treating this as authoritative."
+    },
+    "whatsapp": {
+      "partial": true,
+      "notes": "WhatsApp Cloud API interactive messages support reply buttons (max 3) and list messages (max 10 rows) — a narrower, more constrained affordance than Telegram's arbitrary inline_keyboard grid, not a like-for-like equivalent."
+    }
+  },
+  "emulators": {
+    "chatwright-go": {
+      "supported": true
+    },
+    "chatwright-ts": {
+      "supported": false,
+      "notes": "browser runtime scaffolded, not implemented"
+    }
+  }
+}

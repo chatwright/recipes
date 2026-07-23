@@ -1,0 +1,24 @@
+{
+  "key": "messaging.message.edit",
+  "status": "stable",
+  "specUrl": "https://core.telegram.org/bots/api#editmessagetext",
+  "support": {
+    "telegram": {
+      "since": "Bot API 2.0",
+      "notes": "editMessageText/editMessageReplyMarkup shipped alongside inline keyboards, so a bot could update a message after a button tap. Verify the exact Bot API version against Telegram's official changelog before treating this as authoritative — do not copy this value into other documents without checking."
+    },
+    "whatsapp": {
+      "supported": false,
+      "notes": "The WhatsApp Business Platform has no API to edit a previously sent message; the common workaround is sending a new message and leaving the old one in place."
+    }
+  },
+  "emulators": {
+    "chatwright-go": {
+      "supported": true
+    },
+    "chatwright-ts": {
+      "supported": false,
+      "notes": "browser runtime scaffolded, not implemented"
+    }
+  }
+}

@@ -31,20 +31,21 @@ on.
 | Implementation | Tier | Platform | One-line trade-off |
 |---|---|---|---|
 | [Inline buttons + message edit](implementations/telegram-inline-buttons.md) | official | telegram | One tap, zero typing; needs button + edit support |
+| [Universal numbered replies](implementations/universal-numbered-replies.md) | alternative | any | Works everywhere; typo-prone, no visual affordance, greeting is always a new message |
 
-More implementations welcome — reply-button and numbered-reply variants
-for platforms without inline keyboards are natural alternatives
-(see [CONTRIBUTING](../../CONTRIBUTING.md)).
+More implementations welcome (see [CONTRIBUTING](../../CONTRIBUTING.md)).
 
 ## Demo
 
-The official implementation is **live**:
+Both implementations are **live** in
 [chatwright/greetbot](https://github.com/chatwright/greetbot) — a
 no-framework, no-build iframe bot speaking the
 [bot protocol](https://chatwright.dev/formats/bot-protocol/v1), hosted at
-[chatwright.github.io/greetbot](https://chatwright.github.io/greetbot/).
-Its protocol exchange was proven live in a real browser on 2026-07-23; the
-in-page Playground demo lands with the browser runtime.
+[chatwright.github.io/greetbot](https://chatwright.github.io/greetbot/):
+the official inline-buttons implementation as its Telegram adapter, the
+universal-numbered-replies implementation as its WhatsApp adapter. Both
+adapters' protocol exchange was proven live in a real browser on
+2026-07-23; the in-page Playground demo lands with the browser runtime.
 
 ## Code
 
@@ -68,4 +69,5 @@ player's samples.
 ## References
 
 - [Job: onboard users in their language](../../jobs/onboard-users-in-their-language.md)
-- Capabilities: `messaging.buttons.inline`, `messaging.message.edit`
+- Capabilities: `messaging.buttons.inline`, `messaging.message.edit` (official)
+  · `messaging.text` (universal numbered replies)

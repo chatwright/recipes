@@ -1,0 +1,58 @@
+---
+id: language-onboarding
+title: Language onboarding
+jobs: [onboard-users-in-their-language]
+status: draft
+---
+
+# Language onboarding
+
+Greet a new user, offer a language choice, and continue in the language
+they pick — editing the original greeting in place rather than flooding
+the chat with a second message.
+
+## The conversation
+
+```
+user:  /start
+bot:   Choose your language
+       [English] [Español] [Français]
+user:  taps [English]
+bot:   (edits the greeting in place) → "Howdy stranger"
+```
+
+The in-place edit is the design point: the chat history stays one message
+deep, and the user sees their choice take effect on the message they acted
+on.
+
+## Implementations
+
+| Implementation | Tier | Platform | One-line trade-off |
+|---|---|---|---|
+| [Inline buttons + message edit](implementations/telegram-inline-buttons.md) | official | telegram | One tap, zero typing; needs button + edit support |
+
+More implementations welcome — reply-button and numbered-reply variants
+for platforms without inline keyboards are natural alternatives
+(see [CONTRIBUTING](../../CONTRIBUTING.md)).
+
+## Demo
+
+The official implementation is **live**:
+[chatwright/greetbot](https://github.com/chatwright/greetbot) — a
+no-framework, no-build iframe bot speaking the
+[bot protocol](https://chatwright.dev/formats/bot-protocol/v1), hosted at
+[chatwright.github.io/greetbot](https://chatwright.github.io/greetbot/).
+Its protocol exchange was proven live in a real browser on 2026-07-23; the
+in-page Playground demo lands with the browser runtime.
+
+## Testing
+
+The Go runtime's greetbot example runs this exact flow as a deterministic
+scenario (send `/start`, expect the greeting with the language keyboard,
+click, expect the edit) — recorded run bundles of it ship as the Studio
+player's samples.
+
+## References
+
+- [Job: onboard users in their language](../../jobs/onboard-users-in-their-language.md)
+- Capabilities: `messaging.buttons.inline`, `messaging.message.edit`

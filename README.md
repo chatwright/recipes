@@ -53,6 +53,18 @@ until it does, a recorded run bundle is the interim demo (see each Recipe's
 *Demo* section). Either way the evidence is real — a replayable recording,
 never a placeholder.
 
+## Registered repositories
+
+The federation registry's current entries — independently owned
+repositories carrying a
+[`CHATWRIGHT.md`](https://chatwright.dev/formats/chatwright-md/v1) manifest:
+
+| Repository | What it is | Platforms | Try it |
+|---|---|---|---|
+| [chatwright/greetbot](https://github.com/chatwright/greetbot) | The official [language-onboarding](recipes/language-onboarding/README.md) demo bot — no framework, no build step, live on GitHub Pages | Telegram (WhatsApp/Viber/Slack planned) | [![Try in Chatwright](https://chatwright.dev/badge.svg)](https://chatwright.dev/try/github/chatwright/greetbot) |
+
+Add yours: [register in one PR](registry/README.md).
+
 ## Structure
 
 | Path | Contents |

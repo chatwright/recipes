@@ -1,4 +1,12 @@
 {
   "format": "https://chatwright.dev/formats/registry/v0",
-  "entries": []
+  "entries": [
+    {
+      "id": "greetbot",
+      "repo": "https://github.com/chatwright/greetbot",
+      "category": "demo",
+      "capabilities": ["messaging.buttons.inline", "messaging.message.edit"],
+      "addedAt": "2026-07-23"
+    }
+  ]
 }

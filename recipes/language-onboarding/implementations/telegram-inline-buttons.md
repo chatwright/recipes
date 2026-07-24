@@ -20,7 +20,7 @@ step). Live at
 
 ## Advantages
 
-- One tap, zero typing; no free-text parsing.
+- One tap, zero typing — and since greetbot v0.2.1 the buttons carry numbered labels ("English (1)") with typed digits/names accepted too, so the button and numbered-reply techniques coexist on Telegram.
 - The in-place edit keeps history clean and confirms the choice on the
   message the user acted on.
 

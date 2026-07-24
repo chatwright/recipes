@@ -53,3 +53,7 @@ conversation logic in `shared/greet.js` unchanged. Live at
 - **The greeting is always a new message.** On a platform with a
   message-edit endpoint (Telegram), the official implementation edits the
   original greeting in place instead; this technique never can.
+
+Note: on platforms that also have buttons (Telegram), this technique can
+coexist with them — greetbot v0.2.1 labels its inline buttons "English
+(1)" and accepts the typed digit as an equal path.
